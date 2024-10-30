@@ -19,9 +19,9 @@ import {
 import {NG_VALUE_ACCESSOR} from '@angular/forms';
 
 declare var $: any;
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
-const _moment = moment;
+const _dayjs = dayjs;
 
 
 @Directive({
@@ -33,7 +33,7 @@ const _moment = moment;
 })
 export class NgTempusdominusBootstrapInputDirective implements OnInit, OnDestroy, DoCheck {
 
-    _value: moment.Moment;
+    _value: dayjs.Dayjs;
     private _options: any = {};
     @Input() set options(value) {
         if (value !== null) {
@@ -151,7 +151,7 @@ export class NgTempusdominusBootstrapInputDirective implements OnInit, OnDestroy
             if (e.date && e.date !== this.value) {
                 this.value = e.date || null;
             } else {
-                const date = _moment(e.target.value, this.options.format);
+                const date = _dayjs(e.target.value, this.options.format);
                 if (date.isValid()) {
                     this.value = date;
                 }

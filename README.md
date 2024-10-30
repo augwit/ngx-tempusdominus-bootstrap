@@ -21,13 +21,13 @@ npm install ngx-tempusdominus-bootstrap --save
 * bootstrap (.js & .css),
 * tempusdominus core, 
 * tempusdominus bootstrap 3 or 4(.js & .css),
-* moment.
+* dayjs.
 
 ## For bootstrap 4
 
     
 ```
-npm install jquery bootstrap moment tempusdominus-core tempusdominus-bootstrap-4 --save
+npm install jquery bootstrap dayjs tempusdominus-core tempusdominus-bootstrap-4 --save
 ```
 <details>
     <summary>
@@ -45,7 +45,7 @@ npm install jquery bootstrap moment tempusdominus-core tempusdominus-bootstrap-4
     "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/dayjs/dayjs.min.js",
         "../node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js"
     ],
 ```
@@ -55,7 +55,7 @@ npm install jquery bootstrap moment tempusdominus-core tempusdominus-bootstrap-4
 
     
 ```
-npm install jquery bootstrap@^3.0.0 moment tempusdominus-core tempusdominus-bootstrap-3 --save
+npm install jquery bootstrap@^3.0.0 dayjs tempusdominus-core tempusdominus-bootstrap-3 --save
 ```
 
 <details>
@@ -74,7 +74,7 @@ npm install jquery bootstrap@^3.0.0 moment tempusdominus-core tempusdominus-boot
     "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../node_modules/moment/min/moment.min.js",
+        "../node_modules/dayjs/dayjs.min.js",
         "../node_modules/tempusdominus-bootstrap-3/build/js/tempusdominus-bootstrap-3.js"
     ],
 ```
@@ -136,7 +136,7 @@ All the options available in the original library are supported. Check the list 
 ```javascript
 options = {
     format: "DD.MM.YYYY",
-    maxDate: moment(),
+    maxDate: dayjs(),
     minDate: date,
     // ...
 };

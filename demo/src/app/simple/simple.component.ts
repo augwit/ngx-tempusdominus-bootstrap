@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
 @Component({
   selector: 'app-simple',
@@ -9,13 +9,13 @@ import * as moment from 'moment';
 export class SimpleComponent implements OnInit {
 
   options = {format: 'YYYY/MM/DD HH:mm', buttons: {showClear: true}, icons: {clear:'fa fa-trash'}};
-  date = null;
+  date: any = null;
   constructor() { }
   ngOnInit() {
-    this.date = moment('2015-11-20T22:10Z');
+    this.date = dayjs('2015-11-20T22:10Z');
   }
   addTime(val, selector) {
-    this.date = moment(this.date.add(val, selector));
+    this.date = dayjs(this.date.add(val, selector));
   }
   clearTime() {
     this.date  = null;

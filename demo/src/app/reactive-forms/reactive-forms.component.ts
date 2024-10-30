@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
 @Component({
   selector: 'app-reactive-forms',
@@ -14,7 +14,7 @@ export class ReactiveFormsComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.form = fb.group({
-      date: [moment('2015-11-18T00:00Z'), Validators.required]
+      date: [dayjs('2015-11-18T00:00Z'), Validators.required]
     });
   }
 

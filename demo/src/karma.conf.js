@@ -25,6 +25,7 @@ module.exports = function (config) {
       '../../node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css',
       '../../node_modules/jquery/dist/jquery.min.js',
       '../../node_modules/bootstrap/dist/js/bootstrap.min.js',
+      '../../node_modules/dayjs/dayjs.min.js',
       '../../node_modules/moment/min/moment.min.js',
       '../../node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js'
     ],
